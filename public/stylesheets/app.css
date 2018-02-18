@@ -1,0 +1,179 @@
+i.icon{
+    font-size: 1.5em;
+}
+.container.main{
+    margin-top:7em;
+}
+.abc{
+    margin-top:12em;
+}
+#deletedpostbutton{
+    display: inline;
+}
+
+
+.navbar2{
+    position:absolute;
+    width:100%;
+    z-index:10;
+    max-width:100%;
+    color:white;
+}
+#brand{
+    height:70px;
+    padding-bottom:7px;
+    /* margin-left:30px; */
+}
+.navitem{
+    color:white;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1);
+}
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+
+  /* border-bottom: 2px solid rgb(5, 160, 5); */
+ /* background: linear-gradient(to bottom,rgba(211, 23, 202, 0.794), rgba(233,188,222,0.0)); */
+  /* border-radius: 5px; */
+  /* padding-bottom: 10px; */
+  color: rgb(39, 8, 59,0.9);
+}
+/* linkhover */
+ 
+a.notactivehome:hover { 
+    color:rgba(211, 23, 202, 0.794) !important;
+    border-bottom: solid 2px rgba(39, 8, 59,0.9);
+  }
+  a.notactivehome {
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-right: 7px !important;
+    color:rgb(115, 62, 151) !important;
+  }
+  a.notactivenew {
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 7px !important;
+    color: rgb(255, 255, 255) !important;
+  }
+  a.notactivenew:hover { 
+    color: rgb(219, 211, 218) !important;
+    border-bottom: solid 2px rgba(245, 156, 226, 0.959);
+  }
+
+/* home btn is active */
+
+a.hoverclass2:hover{
+    color: rgb(222, 224, 230) !important;
+    background: linear-gradient(to top,rgba(211, 23, 202, 0.794), rgba(233,188,222,0.0))!important;
+}
+a.hoverclass2{
+    color: rgb(39, 8, 59,0.9) !important;
+    background: linear-gradient(to bottom,rgba(211, 23, 202, 0.794), rgba(233,188,222,0.0))!important;
+}
+a.hoverclass2all:hover{
+    color:rgb(255, 255, 255) !important;
+    background: linear-gradient(to top,rgba(211, 23, 202, 0.794), rgba(233,188,222,0.0))!important;
+}
+a.hoverclass2all{
+    color:rgb(115, 62, 151) !important;
+    background: linear-gradient(to bottom,rgba(211, 23, 202, 0.794), rgba(233,188,222,0.0))!important;
+}
+
+.item2:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0; 
+    /* background:linear-gradient(to bottom,rgba(2, 2, 2,0.9),rgba(253, 253, 253,0.0)); */
+     background:linear-gradient(to bottom,rgba(2, 2, 2,0.9),rgba(253, 253, 253,0.0),rgba(2, 2, 2,0.9));
+  }  
+  /* navbarall background */
+  /*#navbarall{*/
+      /* background: rgb(158, 56, 145) !important; */
+  /* } */
+  /* .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  } */
+  
+  /* .carousel-inner>.carousal-item>img, .carousel-inner>.carousal-item>a>img {
+    display: block !important;
+    height: auto !important;
+    max-width: 100% !important;
+    line-height: 1 !important;
+    width: 100% !important; 
+    }  */
+/* Make the image fully responsive*/
+.carousel-inner img {
+    width: 100% !important;
+    height: 100% !important;
+}
+.readmore{
+    text-decoration: none;
+    color: white;
+}
+.cardimg{
+    height:50%;
+}
+.btn-primary:hover .readmore{
+    text-decoration: none;
+    /* color: #ffffff; */
+    color: #007bff;
+}
+.btn-primary:hover{
+   /* background:rgba(86, 216, 255, 0.794); */
+   background: white;
+   border: #007bff 2px solid;
+  
+}
+  
+}
+#homegrid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blogcard{
+    margin-bottom: 15px !important;
+}
+.button {
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: #4CAF50;
+}
+.carread{
+    color: white;
+}
+
+/* makes link white by hovering on any place on the btn */
+.button:hover .carread{
+    
+    color: white;
+    text-decoration: none;
+  
+}
+
+.button:hover{
+    background-color: #4CAF50;
+}
+#descr{
+    padding:25px 0;
+}
+p.tinos{
+    font-family: 'Titillium Web', sans-serif;
+    text-align: justify;
+}
+.titilliumfont{
+    font-family: 'Titillium Web', sans-serif !important;
+}

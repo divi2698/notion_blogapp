@@ -1,0 +1,29 @@
+<%include partials/header%>
+<div class="jumbotron">
+<div class="ui main text container segment">
+    <div class=" titilliumfont ui huge header"><%=blog.title%></div> 
+
+    <div class="ui top attached">
+            <div class="item">
+                    <div class="content">
+                            <span><small class="text-muted"><i class="fas fa-calendar-alt"></i><span style="
+                                padding-right: 5px;"></span><%= blog.created.toDateString() %><span style="
+                                padding-right: 10px;"></span><i class="fas fa-clock"></i><span style="padding-right: 5px;"></span><%=blog.created.toLocaleTimeString() %></small></span>
+                        </div>
+                        <hr>
+                <img class="ui centered rounded image" src="<%= blog.image %>">
+                
+                <div class="decription" id="descr">
+                     <p class="tinos">  <%- blog.body %></p>
+                </div>
+                
+                <a href="/blogs/<%=blog._id%>/edit" class="ui orange basic button">Edit</a>
+                <form id="deletedpostbutton" action="/blogs/<%=blog._id%>?_method=delete" method="post">
+                <button class="ui red basic button">Delete</button>
+                </form>
+            </div>
+    </div>
+         
+</div>
+</div>
+<%include partials/footer%>
