@@ -10,7 +10,7 @@ var bodyParser          =require("body-parser"),
    
 
 // mongoose.connect("mongodb://localhost/blogapp");
-mongoose.connect("mongodb://blogappusername:rusty@ds141068.mlab.com:41068/blogapp");
+mongoose.connect("mongodb://notiondb:notiondb@ds151528.mlab.com:51528/notion");
 
 app.set("view engine","ejs");
 app.use(express.static("public"));
