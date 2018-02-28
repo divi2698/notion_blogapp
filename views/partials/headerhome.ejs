@@ -40,11 +40,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                 <a class="nav-link hoverclass2" href="/">Home <span class="sr-only">(current)</span></a>
+                 <a class="nav-link hoverclass2" href="/blogs">Home <span class="sr-only">(current)</span></a>
                 </li>
+                <% if(currentUser){ %>
                 <li class="nav-item">
                   <a class="nav-link notactivenew" href="/blogs/new">New Post</a>
                 </li>
+                <% }%>
               </ul>
+              <ul class="navbar-nav ml-auto">
+                  <% if(!currentUser){ %>
+                    <li class="nav-item active"><a class="nav-link notactivenew login" href="/register">SignUp <i class="fas fa-user-plus"></i></a></li>
+                    <li class="nav-item active"><a class="nav-link notactivenew" href="/login">LogIn <i class="fas fa-sign-in-alt"></i></a></li>
+                  <% }else{ %>
+                    <li class="nav-item active"><a class="nav-Link hoverclass2 login" href="#"> Signed In As <%=currentUser.username %></a></li>
+                    <li class="nav-item active"><a class="nav-link notactivenew" href="/logout">LogOut <i class="fas fa-sign-out-alt"></i></a></li>
+                  <% }  %>
+                  </ul>
             </div>
           </nav>

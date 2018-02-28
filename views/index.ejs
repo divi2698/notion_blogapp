@@ -1,6 +1,7 @@
 <% include ./partials/headerhome %> 
 <!--courousel-->
-<div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
+<%if(blogs&&blogs.length>=3){%>
+  <div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
 
   <!-- Indicators -->
   <ul class="carousel-indicators">
@@ -19,7 +20,7 @@
               <div class="carousel-caption">
                   <h3 class="titilliumfont"><%=blogs[i].title%></h3>
                   <p class="titilliumfont"><%- blogs[i].body.substring(0,100) %>...</p>
-                  <button class="button"><a href="/blogs/<%= blogs[i]._id %>"class="carread" >Read More</a></button>
+                  <button class="button"><a href="/blogs/<%= blogs[i]._id %>" class="carread" >Read More</a></button>
                 </div>
             </div>
              
@@ -27,8 +28,8 @@
           <div class="carousel-item item2">
               <img src="<%= blogs[i].image %>" width="1100" height="500">
               <div class="carousel-caption">
-                  <h3><%=blogs[i].title%></h3>
-                  <p><%- blogs[i].body.substring(0,250) %>...</p>
+                  <h3 class="titilliumfont"><%=blogs[i].title%></h3>
+                  <p class="titilliumfont"><%- blogs[i].body.substring(0,250) %>...</p>
                   <button class="button"><a href="/blogs/<%= blogs[i]._id %>"class="carread">Read More</a></button>
                 </div>
             </div>
@@ -46,6 +47,7 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
+<% } %>
 
 <div class="abc"></div>
 

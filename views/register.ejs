@@ -1,0 +1,30 @@
+<% include ./partials/headerreg %> 
+
+
+
+    <div class="jumbotron">
+    <div class="container" style="
+        width: 45%;
+        padding-top:10px;">
+    <h2 class="titilliumfont" style="margin-top:15px;">SignUp</h2>
+            <form action="/register" method="post" style="padding-top:10px;">
+
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Username</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" name="username" placeholder="Enter Username">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">SignUp</button>
+                  </form>
+
+     </div>   
+    </div>
+    
+
+
+
+
+<% include ./partials/footer %> 

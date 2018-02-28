@@ -12,15 +12,22 @@
                         </div>
                         <hr>
                 <img class="ui centered rounded image" src="<%= blog.image %>">
+                <hr>
+                <div class="content titilliumfont">
+                <span><small class="text-muted"><i class="fas fa-edit"></i><span style="
+                        padding-right: 5px;"></span><span style="padding-right:2px">Article By:</span></small></span>  <em><%=  blog.author.username  %></em>
+                                              
+                </div>
                 
                 <div class="decription" id="descr">
                      <p class="tinos">  <%- blog.body %></p>
                 </div>
-                
+                <%  if(currentUser&&blog.author.id.equals(currentUser._id)){ %>
                 <a href="/blogs/<%=blog._id%>/edit" class="ui orange basic button">Edit</a>
                 <form id="deletedpostbutton" action="/blogs/<%=blog._id%>?_method=delete" method="post">
                 <button class="ui red basic button">Delete</button>
                 </form>
+                <% } %>
             </div>
     </div>
          
