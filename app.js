@@ -126,7 +126,8 @@ app.post("/blogs",isLoggedIn,function(req,res){
 app.get("/blogs/:id",function(req,res){
     blog.findById(req.params.id,function(err,foundBlog){
         if(err)
-        res.redirect("/blogs");
+        res.send("errror");
+        // res.redirect("/blogs");
         else
         res.render("show",{blog:foundBlog});
     });

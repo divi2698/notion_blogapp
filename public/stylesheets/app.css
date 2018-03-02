@@ -63,7 +63,7 @@ a.notactivehome:hover {
   }
   a.notactivenew:hover { 
     color: rgb(219, 211, 218) !important;
-    border-bottom: solid 2px rgba(245, 156, 226, 0.959);
+    border-bottom: solid 2px rgba(134, 61, 118, 0.959);
   }
 
 /* home btn is active */
@@ -73,7 +73,7 @@ a.hoverclass2:hover{
     background: linear-gradient(to top,rgba(211, 23, 202, 0.794), rgba(233,188,222,0.0))!important;
 }
 a.hoverclass2{
-    color: rgb(39, 8, 59,0.9) !important;
+    color: white !important;
     background: linear-gradient(to bottom,rgba(211, 23, 202, 0.794), rgba(233,188,222,0.0))!important;
 }
 a.hoverclass2all:hover{
