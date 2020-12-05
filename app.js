@@ -10,7 +10,8 @@ var bodyParser          =require("body-parser"),
    
 
 // mongoose.connect("mongodb://localhost/blogapp");
-mongoose.connect("mongodb://notiondb:notiondb@ds151528.mlab.com:51528/notion");
+// mongoose.connect("mongodb://notiondb:notiondb@ds151528.mlab.com:51528/notion");
+mongoose.connect("mongodb://notiondb:notiondb@notion-shard-00-00.kdepn.mongodb.net:27017,notion-shard-00-01.kdepn.mongodb.net:27017,notion-shard-00-02.kdepn.mongodb.net:27017/notion?ssl=true&replicaSet=atlas-7q0h6u-shard-0&authSource=admin&retryWrites=true&w=majority");
 
 app.set("view engine","ejs");
 app.use(express.static("public"));
